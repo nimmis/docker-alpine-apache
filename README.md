@@ -22,7 +22,7 @@ This will start the container with apache process runnung, access the container 
 The images exposes a volume at /web. The structure below /web is
 
 | Directory | Function |
------------------------
+| --------- | -------- |
 | html | web root |
 | cgi-bin | cgi bin folder |
 | config | apache config directory |
