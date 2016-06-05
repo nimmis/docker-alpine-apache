@@ -6,7 +6,7 @@ COPY  apache2 /etc/service/apache2/run
 COPY  populate /etc/run_always/ 
 RUN apk update && apk upgrade && \
     apk add apache2 && \
-    mkdir -p /web/html && mkdir /web/apache2 && chown -R apache.apache /web && \
+    mkdir -p /web/html && mkdir /web/apache2 && chown -R apache.www-data /web && \
     sed -i 's#^DocumentRoot ".*#DocumentRoot "/web/html"#g' /etc/apache2/httpd.conf && \
     sed -i 's#AllowOverride none#AllowOverride All#' /etc/apache2/httpd.conf && \
     sed -i 's#^ServerRoot .*#ServerRoot /web#g'  /etc/apache2/httpd.conf && \
