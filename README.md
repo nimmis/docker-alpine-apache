@@ -1,6 +1,6 @@
 ## Alpine microcontainer with Apache2
 
-This is a micro docker container [![](https://badge.imagelayers.io/nimmis/alpine-apache:latest.svg)](https://imagelayers.io/?images=nimmis/alpine-apache:latest) based on Alpine 3.3 and Apache version 2
+This is a micro docker container [![](https://badge.imagelayers.io/nimmis/alpine-apache:latest.svg)](https://imagelayers.io/?images=nimmis/alpine-apache:latest) based on Alpine 3.4 and Apache version 2
 
 
 ### Examples
