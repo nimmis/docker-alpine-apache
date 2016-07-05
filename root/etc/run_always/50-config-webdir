@@ -2,17 +2,6 @@
 
 # popolate /web if empty
 
-if [ ! -d /web/html ]; then
-  mkdir /web/html
-  echo "<html>
-  <body>
-    <h1>It Works!</h1>
-    Apache on Alpine with Docker container <a href=https://hub.docker.com/r/nimmis/ubuntu/>nimmis/alpine-apache</a>
-  </body>
-</html>" > /web/html/index.html
-  chown -R apache.www-data /web/html
-fi
-
 if [ ! -d /web/config ]; then
   mkdir /web/config
   chown -R apache.www-data /web/config
