@@ -3,7 +3,7 @@ FROM nimmis/alpine-micro
 MAINTAINER nimmis <kjell.havneskold@gmail.com>
 
 COPY  apache2 /etc/service/apache2/run
-COPY  populate /etc/run_always/ 
+COPY  50-config-webdir /etc/run_always/ 
 RUN apk update && apk upgrade && \
     apk add apache2 libxml2-dev apache2-utils && \
     mkdir /web/ && mkdir /web/apache2 && chown -R apache.www-data /web && \
