@@ -1,0 +1,46 @@
+#!/bin/sh
+
+# popolate /web if empty
+
+if [ ! -d /web/html ]; then
+  mkdir /web/html
+  echo "<html>
+  <body>
+    <h1>It Works!</h1>
+    Apache on Alpine with Docker container <a href=https://hub.docker.com/r/nimmis/ubuntu/>nimmis/alpine-apache</a>
+  </body>
+</html>" > /web/html/index.html
+  chown -R apache.www-data /web/html
+fi
+
+if [ ! -d /web/config ]; then
+  mkdir /web/config
+  chown -R apache.www-data /web/config
+fi
+
+if [ ! -d /web/logs ]; then
+  mkdir /web/logs
+  chown -R apache.www-data /web/logs
+fi
+
+if [ ! -f /web/config/httpd.conf ]; then
+  cp -R /etc/apache2/* /web/config/
+  chown -R apache.www-data /web/config
+  # fix bug in httpd.conf
+  sed -i 's/^Group apache/Group www-data/' /web/config/httpd.conf
+fi
+
+if [ ! -d /web/modules ]; then
+  ln -s /usr/lib/apache2 /web/modules
+fi
+
+if [ ! -d /web/run ]; then
+  mkdir /web/run
+  mkdir /web/run/apache2
+fi
+
+if [ ! -d /web/cgi-bin ]; then
+  mkdir /web/cgi-bin
+  chown -R apache.www-data /web/cgi-bin
+fi
+
