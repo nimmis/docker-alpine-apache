@@ -1,0 +1,52 @@
+    body {
+      // background-image: url("/internal/bg.jpg");//
+      background-repeat: no-repeat;
+      background-color: #303030;
+      font-family: sans-serif;
+    }
+
+    div {
+      color: white ;
+    }
+    .error404 {
+      float:right;
+      text-align: center;
+      width: 60%;
+      margin: 5% auto 0;
+    }
+
+    #head {
+      font-size:300%;
+    }
+
+    #foo {
+      color: #f05050;
+      font-size:150%;
+      text-shadow: 2px 2px 2px #000;
+    }
+
+    #foo2 {
+      font-size:150%;
+    }
+
+    #footer {
+      position : absolute;
+      font-size: .6em;
+      bottom : 0;
+      height : 20px;
+      margin-top : 40px;
+    }
+
+    #w3cs {
+      position : absolute;
+      font-size: .6em;
+      bottom : 0;
+      height : 60px;
+      margin-top : 40px;
+    }
+    #pic {                
+      position:absolute;  
+//      left: 120px;    
+//      top: 80px;      
+      z-index: -1;      
+    }           
