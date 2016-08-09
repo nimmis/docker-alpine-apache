@@ -18,6 +18,7 @@ RUN apk update && apk upgrade && \
     sed -i 's#Directory "/var/www/localhost/cgi-bin.*#Directory "/web/cgi-bin" >#g' /etc/apache2/httpd.conf && \
 
     sed -i 's#/var/log/apache2/#/web/logs/#g' /etc/logrotate.d/apache2 && \
+    sed -i 's/Options Indexes/Options /g' /etc/apache2/httpd.conf && \
 
     rm -rf /var/cache/apk/*
 
