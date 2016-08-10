@@ -49,4 +49,4 @@ so to access the apache server port 80 on port 8080 you should use the command
 
 If everything worked and you where able to expose the correct port and type the correct adress in a webbrowser the following page should appear.
 
-![screenshot](images/screenshot.png?raw=true "Screenshot")
+![screenshot](https://github.com/nimmis/docker-alpine-apache/blob/master/images/screenshot.png?raw=true "Screenshot")
