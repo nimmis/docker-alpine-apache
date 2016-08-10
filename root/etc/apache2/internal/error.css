@@ -1,5 +1,4 @@
     body {
-      // background-image: url("/internal/bg.jpg");//
       background-repeat: no-repeat;
       background-color: #303030;
       font-family: sans-serif;
@@ -46,7 +45,5 @@
     }
     #pic {                
       position:absolute;  
-//      left: 120px;    
-//      top: 80px;      
       z-index: -1;      
     }           
