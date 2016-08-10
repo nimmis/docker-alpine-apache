@@ -47,6 +47,6 @@ so to access the apache server port 80 on port 8080 you should use the command
 
 #### Successsful setup
 
-If everything worked and you where able to expose the correct port and you type in the adress in a webbrowser the following page should appear.
+If everything worked and you where able to expose the correct port and type the correct adress in a webbrowser the following page should appear.
 
 ![screenshot](images/screenshot.png?raw=true "Screenshot")
