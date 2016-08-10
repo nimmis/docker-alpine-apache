@@ -7,7 +7,20 @@
     div {
       color: white ;
     }
-    .error404 {
+
+    a:link {
+      color: lightgray;
+    }
+
+    a:visited {
+      color: lightblue;
+    }
+
+    a:hover {
+      color: white;
+    }
+
+    .infotxt {
       float:right;
       text-align: center;
       width: 60%;
@@ -18,13 +31,13 @@
       font-size:300%;
     }
 
-    #foo {
+    #urltag {
       color: #f05050;
       font-size:150%;
       text-shadow: 2px 2px 2px #000;
     }
 
-    #foo2 {
+    #reason {
       font-size:150%;
     }
 
@@ -34,6 +47,7 @@
       bottom : 0;
       height : 20px;
       margin-top : 40px;
+
     }
 
     #w3cs {
