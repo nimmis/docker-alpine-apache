@@ -35,7 +35,7 @@ if the folders are missing they will be created each time the container is start
 
 #### Accessing apache from outside the container
 
-To access the webserver from external you can the **-P/-p** paramter, with **-P** the ports 80 and 443 is automaticly exposed (equal to **-p 80:80 -p 443:443**) 
+To access the webserver from external you can the **-P/-p** paramter, with **-P** the ports 80 and 443 is automaticly exposed and assign a random port.
 
 or use the **-p** command to assign other ports, the syntax is
 
@@ -44,6 +44,10 @@ or use the **-p** command to assign other ports, the syntax is
 so to access the apache server port 80 on port 8080 you should use the command
 
 	docker run -d --name apache -p 8080:80 nimmis/alpine-apache
+
+or assigning 80->80 and 443->443 use
+
+	docker run -d --name apache -p 80:80 -p 443:443 nimmis/alpine-apache
 
 #### Successsful setup
 
