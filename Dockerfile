@@ -13,7 +13,7 @@ RUN apk update && apk upgrade && \
     mkdir /web/ && chown -R apache.www-data /web && \
    
     sed -i 's#^DocumentRoot ".*#DocumentRoot "/web/html"#g' /etc/apache2/httpd.conf && \
-    sed -i 's#AllowOverride none#AllowOverride All#' /etc/apache2/httpd.conf && \
+    sed -i 's#AllowOverride [Nn]one#AllowOverride All#' /etc/apache2/httpd.conf && \
     sed -i 's#^ServerRoot .*#ServerRoot /web#g'  /etc/apache2/httpd.conf && \
     sed -i 's/^#ServerName.*/ServerName webproxy/' /etc/apache2/httpd.conf && \
     sed -i 's#^IncludeOptional /etc/apache2/conf#IncludeOptional /web/config/conf#g' /etc/apache2/httpd.conf && \
