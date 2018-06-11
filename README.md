@@ -29,7 +29,7 @@ The images exposes a volume at /web. The structure is
 
 To use this start the container with
 
-	docker run -d --name -apache -v /path/to/web:/web nimmis/alpine-apache
+	docker run -d --name apache -v /path/to/web:/web nimmis/alpine-apache
 
 if the folders are missing they will be created each time the container is started.
 
