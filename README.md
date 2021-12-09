@@ -29,7 +29,7 @@ The images exposes a volume at /web. The structure is
 
 To use this start the container with
 
-	docker run -d --name -apache -v /path/to/web:/web nimmis/alpine-apache
+	docker run -d --name apache -v /path/to/web:/web nimmis/alpine-apache
 
 if the folders are missing they will be created each time the container is started.
 
@@ -51,6 +51,6 @@ or assigning 80->80 and 443->443 use
 
 #### Successsful setup
 
-If everything worked and you where able to expose the correct port and type the correct adress in a webbrowser the following page should appear.
+If everything worked and you were able to expose the correct port and type the correct adress in a webbrowser the following page should appear.
 
 ![screenshot](https://github.com/nimmis/docker-alpine-apache/blob/master/images/screenshot.png?raw=true "Screenshot")
